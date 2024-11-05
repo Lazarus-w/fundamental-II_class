@@ -15,9 +15,10 @@ struct circle{
 int main(){
 	char ch;
 	cout<<"enter r for rectangle. \n"<<"enter t for triangle. \n"<<"enter c for circle: ";
+	cin>>ch;
 	switch(ch){
 		case 'r':
-			rectangle rec1;
+		struct rectangle rec1;
 			cout<<"enter the length: ";
 			cin>>rec1.length;  
 		cout<<"enter the width: ";
@@ -25,7 +26,7 @@ int main(){
 		cout<<"the area is: "<<rec1.length*rec1.width;
 		break;
 		case 't':
-			triangle tri1;
+			struct triangle tri1;
 			cout<<"enter the base: ";
 			cin>>tri1.base;
 			cout<<"enter the hight: ";
@@ -33,7 +34,7 @@ int main(){
 			cout<<"the Area is: "<<tri1.base*tri1.hight;
 			break;
 		case 'c':
-		circle cir1;
+		struct circle cir1;
 		cout<<"enter the radius: ";
 		cin>>cir1.radius;
 		cout<<"the area is: "<<cir1.pi*cir1.radius;
