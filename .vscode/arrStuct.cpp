@@ -16,11 +16,11 @@ cout<<"enter your rollNUm: ";
 cin>>stu[i].rollNUm;
 cout<<"enter your grade: ";
 cin>>stu[i].grade;
-sum=+stu[i].grade;
+sum=sum+stu[i].grade;
 
 
 }
-float ave=sum/5;
+int ave=sum/5;
 
 cout<<"the average of the five student's is: "<<ave;
 
