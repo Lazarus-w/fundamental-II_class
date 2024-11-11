@@ -32,7 +32,7 @@ struct person{
         cout<<"name: "<<name<<" age: "<<age<<" gender: "<<gender<<endl;
         
     }
-};
+}p3={"alemu",23,'M'};
 int main(){
  
  struct person p1;
@@ -47,4 +47,6 @@ int main(){
   p2.age=31;
     
     p2.test();
+    p3.test();
+    return 0;
 }
